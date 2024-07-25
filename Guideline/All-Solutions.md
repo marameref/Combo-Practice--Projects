@@ -216,53 +216,8 @@
 ### GitHub Repositories:
 - [Kaggle House Prices Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 
-# Solve the Following Tasks
 
-## 1. Predicting House Prices with Regression
-### Step-by-Step Guide:
-1. **Install Required Libraries**: 
-    ```bash
-    pip install pandas numpy scikit-learn matplotlib seaborn
-    ```
-2. **Import Libraries**:
-    ```python
-    import pandas as pd
-    import numpy as np
-    from sklearn.model_selection import train_test_split
-    from sklearn.linear_model import LinearRegression
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    ```
-3. **Load Dataset**:
-    ```python
-    df = pd.read_csv('housing_data.csv')  # replace with your dataset path
-    ```
-4. **Preprocess Data**:
-    ```python
-    df = df.dropna()  # Remove missing values
-    X = df[['feature1', 'feature2']]  # replace with relevant features
-    y = df['price']  # target variable
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    ```
-5. **Train Model**:
-    ```python
-    model = LinearRegression()
-    model.fit(X_train, y_train)
-    ```
-6. **Evaluate Model**:
-    ```python
-    y_pred = model.predict(X_test)
-    plt.scatter(y_test, y_pred)
-    plt.xlabel('Actual Prices')
-    plt.ylabel('Predicted Prices')
-    plt.title('Actual vs Predicted Prices')
-    plt.show()
-    ```
-
-### GitHub Repositories:
-- [Housing Price Prediction](https://github.com/calistus-igwilo/House-sale-price-prediction-using-python/blob/master/Housing%20Price%20Prediction.md)
-
-## 2. Clustering Customers using K-Means
+## 7. Clustering Customers using K-Means
 ### Step-by-Step Guide:
 1. **Install Required Libraries**: 
     ```bash
@@ -312,7 +267,7 @@
 ### GitHub Repositories:
 - [K-Means Clustering](https://www.ris-ai.com/k-mean-clustering-algorithm)
 
-## 3. Building a Recommendation System with Python
+## 8. Building a Recommendation System with Python
 ### Step-by-Step Guide:
 1. **Install Required Libraries**: 
     ```bash
@@ -351,7 +306,7 @@
 ### GitHub Repositories:
 - [Recommendation System](https://www.geeksforgeeks.org/recommendation-system-in-python/)
 
-## 4. Time Series Forecasting with ARIMA
+## 9. Time Series Forecasting with ARIMA
 ### Step-by-Step Guide:
 1. **Install Required Libraries**: 
     ```bash
@@ -389,7 +344,7 @@
 ### GitHub Repositories:
 - [ARIMA Time Series Forecasting](https://github.com/aditya1295/Time-Series-Forecasting-ARIMA)
 
-## 5. Object Detection using Python and OpenCV
+## 10. Object Detection using Python and OpenCV
 ### Step-by-Step Guide:
 1. **Install Required Libraries**: 
     ```bash
@@ -454,9 +409,5 @@
 2. [javatpoint.com - Predicting Housing Prices using Python](https://www.javatpoint.com/predicting-housing-prices-using-python)
 3. [geeksforgeeks.org - Recommendation System in Python](https://www.geeksforgeeks.org/recommendation-system-in-python/)
 4. [calistus-igwilo/House-sale
-    ```python
-    kmeans = KMeans(n_clusters=5)
-    kmeans.fit(X)
-    data['cluster'] = kmeans.labels_
-    ```
-6. **Visualize the
+    
+
